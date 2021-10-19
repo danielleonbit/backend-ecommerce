@@ -1,0 +1,61 @@
+GET http://localhost:5000/api/users/
+###
+POST http://localhost:5000/api/users/create
+Content-Type: application/json
+
+{
+       "names_and_lastnames":"Daniel Leon",
+        "email":"test2@test.com",
+        "password":"pass123"
+}
+###
+POST http://localhost:5000/api/users/login
+Content-Type: application/json
+
+{ "email": "test2@test.com", "password": "pass123" }
+###
+GET http://localhost:5000/api/categories/
+###
+GET http://localhost:5000/api/products/
+###
+PUT http://localhost:5000/api/users/61500e3c2e545be3fb38d5bc
+Content-Type: application/json
+
+{
+    "names_and_lastnames":"Daniel kLeon"
+}
+###
+
+DELETE  http://localhost:5000/api/users/61500ece00f2482c78330ccb
+
+###
+GET http://localhost:5000/api/categories/
+###
+POST http://localhost:5000/api/categories/create
+Content-Type: application/json
+
+{
+      "name": "categoria 1",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu diam sed massa pretium pretium in non orci. Sed interdum augue sed dui placerat, id ultrices eros tempus. Vivamus nec ligula nec metus scelerisque iaculis.",
+        "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/frutas-1552246920.jpg?crop=1.00xw:0.753xh;0,0.105xh&resize=980:*"
+}
+###
+PUT http://localhost:5000/api/categories/614f672749e33125f7a58488
+Content-Type: application/json
+
+{
+    "name":"Categoria 1"
+}
+###
+DELETE  http://localhost:5000/api/categories/61514b66d7846f2e9875b90f
+###
+POST http://localhost:5000/api/users/login
+Content-Type: application/json
+
+{
+    
+"username": "da@da.com",
+"password": "dada"
+}
+###
+GET http://localhost:5000/api/users/auth
